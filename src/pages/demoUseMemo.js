@@ -1,13 +1,13 @@
 import React, { useState, useMemo } from 'react';
 
 function Time() {
-	return <p>{Date.now()}</p>;
+  return <p>{Date.now()}</p>;
 }
 
 function Demo() {
   const [count, setCount] = useState(0);
   const [count1, setCount1] = useState(0);
-  
+
   const memoizedChildComponent = useMemo(() => {
     return <Time />;
   }, [count]);

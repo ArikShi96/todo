@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 
 function Demo() {
   const [count, setCount] = useState(0);
-  
+
   const showCount = useCallback(() => {
     alert(count);
   }, [count]);
