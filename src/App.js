@@ -1,12 +1,14 @@
 import React from 'react';
-import Demo from './pages/demoUseContext'
+import { Provider } from 'react-redux'
+import Demo from './pages/demoReduxInHooks'
 import './App.css';
+import store from './store'
 
 function App() {
   return (
-    <div className="App">
+    <Provider store={store}>
       <Demo></Demo>
-    </div>
+    </Provider>
   );
 }
 
